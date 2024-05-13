@@ -1,13 +1,7 @@
 import { FaSquareInstagram, FaTwitter } from "react-icons/fa6";
 import Logo from "../assets/LogoMain.png";
 import "../index.css";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -18,7 +12,7 @@ const Header = () => {
         <p className="px-12 ">Finn oss</p>
         <p className="px-12 ">Kontakt oss</p>
       </div>
-      <div className="flex flex-row my-4 px-4  ">
+      <div className="flex flex-row my-4   ">
         <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2">
           <FaTwitter color="#39ECF3" />
         </div>

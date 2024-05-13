@@ -18,7 +18,7 @@ export function Map() {
           />
           <Marker position={[60.80758436467838, 11.053091129300938]}>
             <Popup>
-              <div className="bg-MainBackground w-48 h-24 border-none">
+              <div className="w-48 h-24 border-none">
                 <img src={LogoMain} />
               </div>
             </Popup>
