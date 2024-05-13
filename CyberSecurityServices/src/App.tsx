@@ -1,4 +1,5 @@
 import Waves from "./assets/waves.png";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
           Les Mer Her
         </p>
       </button>
+      <div className="flex flex-row py-24">
+        <Card title="Managed Detection and Response" />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }
