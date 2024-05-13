@@ -10,7 +10,7 @@ import Stores from "../assets/stores.png";
 const Footer = () => {
   return (
     <div className="grid grid-flow-row gap-6 mt-32 animate-gradient bg-gradient-to-t from-MainBackground via-SecondaryBackground to-ForthBackground">
-      <div className="flex flex-row justify-center space-x-44 mt-5">
+      <div className="flex flex-row justify-center space-x-40 mt-5">
         <div className="w-64">
           <img src={LogoMain} alt="" className="w-40 " />
           <p className="text-start text-sm text-MainText opacity-50 w-64 mt-5">
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-2">
           <h2 className="text-2xl text-MainText font-semibold">Kontakt oss</h2>
           <p className="text-MainText opacity-50">
-            Adresse: Satkhira, Kalihanj, BD{" "}
+            Adresse: Satkhira, Kalihanj, BD
           </p>
           <p className="text-MainText opacity-50">
             Email: aburaihan.it009@gmail.com

@@ -4,7 +4,6 @@ import { GiProtectionGlasses } from "react-icons/gi";
 import { SiHackaday } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 import EmployeeCard from "./components/Employee";
-
 const handleScroll = () => {
   const element = document.getElementById("cardSection");
   if (element) {
@@ -25,7 +24,6 @@ function App() {
         <br />
         på vegne av våre verdsatte distribusjons- og teknologipartnere.
       </p>
-
       <button className="flex justify-center align-middle text-center mt-24">
         <p
           className="w-48 h-16 text-2xl text-MainText bg-gradient-to-t from-SecondGradient to-FirstGradient  font-bold rounded-lg flex items-center justify-center"
@@ -65,12 +63,50 @@ function App() {
         <EmployeeCard
           name="Frode Alfredsen"
           image="https://lh6.googleusercontent.com/-UYKv4Oo4AL4/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reOcBoiruxfuiRHs8VAoE-HvgnBDw/mo/photo.jpg?sz=256"
+          description="Frode Alfredsen er en av våre mest erfarne sikkerhetsanalytikere. Han har jobbet med cybersikkerhet i over 20 år og har en doktorgrad i informatikk fra Universitetet i Oslo."
+          url="https://github.com/BrageHage"
         />
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
+        <EmployeeCard
+          name="Alfred kongen"
+          //give me random image link
+          image="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg"
+          description="Alfred Kongen er en sikkerhetsanalytiker med en mastergrad i informatikk fra NTNU. Han har jobbet med cybersikkerhet i over 10 år og har spesialisert seg på nettverkssikkerhet."
+          url="https://github.com/BrageHage"
+        />
+        <EmployeeCard
+          name="Rolf Hansen"
+          image="https://www.w3schools.com/w3images/team2.jpg"
+          description="Rolf Hansen er en etisk hacker som har jobbet med cybersikkerhet i over 15 år. Han har en bachelorgrad i informatikk fra Universitetet i Bergen og har spesialisert seg på penetrasjonstesting."
+          url="https://github.com/BrageHage"
+        />
+        <EmployeeCard
+          name="Jacub Elfenbein"
+          image="https://www.w3schools.com/w3images/team3.jpg"
+          description="Janne Hansen spesielliserer seg på sikkerhet i skyen. Han har jobbet med cybersikkerhet i over 10 år og har en mastergrad i informatikk fra NTNU."
+          url="https://github.com/BrageHage"
+        />
+        <EmployeeCard
+          name="Morten Mortensen"
+          image="https://www.w3schools.com/w3images/team4.jpg"
+          description="Morten Mortensen er en sikkerhetsanalytiker med en bachelorgrad i informatikk fra Universitetet i Oslo. Han har jobbet med cybersikkerhet i over 5 år og har spesialisert seg på trusseljakt."
+          url="https://github.com/BrageHage"
+        />
+        <EmployeeCard
+          name="Kari Karlsen"
+          image="https://www.w3schools.com/w3images/team1.jpg"
+          description="Kari Karlsen er en sikkerhetsanalytiker med en mastergrad i informatikk fra NTNU. Hun har jobbet med cybersikkerhet i over 10 år og har spesialisert seg på datasikkerhet."
+          url="https://github.com/BrageHage"
+        />
+      </div>
+      <h1 className="text-MainText text-7xl font-extrabold shadow-lg mt-64 mb-14">
+        Finn oss
+      </h1>
+      <div className="mt-20">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8498070754213!2d11.06136893233416!3d60.79377470656719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641e13b48173e8d%3A0xb52120066223020d!2sANTI%20Hamar!5e0!3m2!1sen!2sno!4v1715617281790!5m2!1sen!2sno"
+          width={1000}
+          height={600}
+        />
       </div>
     </div>
   );
