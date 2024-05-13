@@ -1,4 +1,4 @@
-import { FaArrowRight, FaCloud } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 type Props = {
   title: string;

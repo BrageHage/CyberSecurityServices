@@ -1,4 +1,4 @@
-import { FaArrowRight, FaCloud, FaGithub } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 
 type Props = {
   name?: string;

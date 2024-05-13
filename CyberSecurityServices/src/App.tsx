@@ -16,10 +16,10 @@ const handleScroll = () => {
 function App() {
   return (
     <div className="flex flex-col justify-center items-center text-center w-screen ">
-      <h1 className="text-MainText text-9xl font-extrabold shadow-lg mt-32 mb-14">
+      <h1 className="text-MainText md:text-9xl text-5xl font-extrabold shadow-lg mt-32 mb-14">
         Cyber Security Services
       </h1>
-      <p className="text-MainText opacity-80 font-sans text-xl">
+      <p className="text-MainText opacity-80 font-sans md:text-xl">
         “Cyber Security Services” er et amerikansk basert cybersikkerhetsselskap
         som også har kontorer på Hamar leverer tjenester og håndterer
         cyber-risiko
@@ -35,7 +35,7 @@ function App() {
         </p>
       </button>
       <FaCircleArrowDown className="w-16 h-16 text-MainButton animate-bounce mt-20 mb-24" />
-      <div className="flex flex-wrap md:flex-nowrap py-24" id="cardSection">
+      <div className="flex flex-wrap py-24 sm: justify-center" id="cardSection">
         <Card
           title="Administrert deteksjon og respons"
           icon={<FaCloudArrowDown />}
@@ -61,7 +61,7 @@ function App() {
       <h1 className="text-MainText text-7xl font-extrabold shadow-lg mt-32 mb-14">
         Våre Ansatte
       </h1>
-      <div className="grid grid-flow-row grid-cols-3 grid-rows-2 gap-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <EmployeeCard
           name="Frode Alfredsen"
           image="https://lh6.googleusercontent.com/-UYKv4Oo4AL4/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reOcBoiruxfuiRHs8VAoE-HvgnBDw/mo/photo.jpg?sz=256"
