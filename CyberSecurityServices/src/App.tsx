@@ -4,6 +4,8 @@ import { GiProtectionGlasses } from "react-icons/gi";
 import { SiHackaday } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 import EmployeeCard from "./components/Employee";
+import { Map } from "./components/MapComponent";
+
 const handleScroll = () => {
   const element = document.getElementById("cardSection");
   if (element) {
@@ -102,11 +104,7 @@ function App() {
         Finn oss
       </h1>
       <div className="mt-20">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.8498070754213!2d11.06136893233416!3d60.79377470656719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641e13b48173e8d%3A0xb52120066223020d!2sANTI%20Hamar!5e0!3m2!1sen!2sno!4v1715617281790!5m2!1sen!2sno"
-          width={1000}
-          height={600}
-        />
+        <Map />
       </div>
     </div>
   );

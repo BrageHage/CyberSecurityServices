@@ -1,22 +1,26 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import LogoMain from "../assets/LogoMain.png";
+import "../index.css";
+
 export function Map() {
   return (
     <>
-      <div className="justify-normal absolute bottom-[6rem]">
-        <h1>Welcome to the LokasjonSide!</h1>
+      <div className="justify-normal bottom-[6rem]">
         <MapContainer
           center={[60.80758436467838, 11.053091129300938]}
           zoom={13}
-          style={{ height: "400px", width: "600px", borderRadius: "15px" }}
+          style={{ height: "600px", width: "800px", borderRadius: "15px" }}
         >
           <TileLayer
-            url="https://{s}.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png"
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           />
           <Marker position={[60.80758436467838, 11.053091129300938]}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              <div className="bg-MainBackground w-48 h-24 border-none">
+                <img src={LogoMain} />
+              </div>
             </Popup>
           </Marker>
         </MapContainer>
