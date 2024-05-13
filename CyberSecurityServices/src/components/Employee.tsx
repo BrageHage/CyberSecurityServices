@@ -1,13 +1,13 @@
 import { FaArrowRight, FaCloud } from "react-icons/fa6";
 
 type Props = {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
+  name?: string;
+  description?: string;
+  image?: string;
   url?: string;
 };
 
-const Card = ({ title, description, icon, url }: Props) => {
+const EmployeeCard = ({ name, description, image, url }: Props) => {
   const handleClickLink = () => {
     console.log("Link clicked");
     if (url) {
@@ -18,11 +18,16 @@ const Card = ({ title, description, icon, url }: Props) => {
   };
 
   return (
-    <div className="flex flex-col w-96 h-96 bg-gradient-to- from bg-MainBackground to-SecondaryBackground rounded-lg border-ThirdBackground border-2 m-4">
-      <div className="w-20 h-20 bg-ThirdBackground rounded-full mt-4 ml-4 mb-2 flex justify-center items-center">
-        <div className="text-6xl text-MainButton">{icon}</div>
+    <div className="flex flex-col w-96 h-[40rem] bg-gradient-to- from bg-MainBackground to-SecondaryBackground rounded-lg border-ThirdBackground border-2 m-4">
+      <h2 className="text-MainText flex px-4 text-2xl text-start bg-ThirdBackground">
+        {name}
+      </h2>
+      <div className="w-72 h-20  mt-4 flex justify-center items-center">
+        <div className="text-6xl text-MainButton">
+          <img src={image} />
+        </div>
       </div>
-      <h2 className="text-MainText flex px-4 text-2xl text-start">{title}</h2>
+
       <p className="text-MainText flex px-4 text-base opacity-80 mt-2 text-start">
         {description}
       </p>
@@ -39,4 +44,4 @@ const Card = ({ title, description, icon, url }: Props) => {
   );
 };
 
-export default Card;
+export default EmployeeCard;
