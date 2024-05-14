@@ -2,6 +2,7 @@ import { FaTwitter } from "react-icons/fa6";
 import Logo from "../assets/LogoMain.png";
 import "../index.css";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { handleClickUrl } from "../Functions/utils";
 
 const Header = () => {
   return (
@@ -13,16 +14,28 @@ const Header = () => {
         <p className="px-12 ">Kontakt oss</p>
       </div>
       <div className="flex flex-row my-4  ">
-        <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2">
+        <div
+          className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2"
+          onClick={() => handleClickUrl("https://twitter.com/home?lang=en")}
+        >
           <FaTwitter color="#39ECF3" />
         </div>
-        <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2">
+        <div
+          className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2"
+          onClick={() => handleClickUrl("https://www.linkedin.com/")}
+        >
           <FaLinkedinIn color="#39ECF3" />
         </div>
-        <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2">
+        <div
+          className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2"
+          onClick={() => handleClickUrl("https://www.instagram.com/")}
+        >
           <FaInstagram color="#39ECF3" />
         </div>
-        <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2">
+        <div
+          className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton mx-2"
+          onClick={() => handleClickUrl("https://www.facebook.com/")}
+        >
           <FaFacebookF color="#39ECF3" />
         </div>
       </div>

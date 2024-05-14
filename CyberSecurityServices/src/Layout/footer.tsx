@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa6";
 import LogoMain from "../assets/LogoMain.png";
 import Stores from "../assets/stores.png";
+import { handleClickUrl } from "../Functions/utils";
 
 const Footer = () => {
   return (
@@ -37,16 +38,32 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl text-MainText font-semibold">Finn oss</h2>
           <div className="flex flex-row space-x-2">
-            <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton">
+            <div
+              className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
+              onClick={() => {
+                handleClickUrl("https://twitter.com/home?lang=en");
+              }}
+            >
               <FaTwitter color="#39ECF3" />
             </div>
-            <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton">
+            <div
+              className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
+              onClick={() => handleClickUrl("https://www.linkedin.com/")}
+            >
               <FaLinkedinIn color="#39ECF3" />
             </div>
-            <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton">
+            <div
+              className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
+              onClick={() => {
+                handleClickUrl("https://www.instagram.com/");
+              }}
+            >
               <FaInstagram color="#39ECF3" />
             </div>
-            <div className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton">
+            <div
+              className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
+              onClick={() => handleClickUrl("https://www.facebook.com/")}
+            >
               <FaFacebookF color="#39ECF3" />
             </div>
           </div>
