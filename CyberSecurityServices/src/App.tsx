@@ -73,7 +73,6 @@ function App() {
         />
         <EmployeeCard
           name="Alfred kongen"
-          //give me random image link
           image="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg"
           description="Alfred Kongen er en sikkerhetsanalytiker med en mastergrad i informatikk fra NTNU. Han har jobbet med cybersikkerhet i over 10 år og har spesialisert seg på nettverkssikkerhet."
           url="https://github.com/BrageHage"
