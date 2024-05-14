@@ -6,7 +6,7 @@ import "../index.css";
 export function Map() {
   return (
     <>
-      <div className="justify-normal bottom-[6rem] md: mb-24">
+      <div className="justify-normal bottom-[6rem] md: mb-32">
         <MapContainer
           center={[60.80758436467838, 11.053091129300938]}
           zoom={13}

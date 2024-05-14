@@ -103,7 +103,7 @@ function App() {
       <h1 className="text-MainText text-7xl font-extrabold shadow-lg mt-64 mb-14">
         Finn oss
       </h1>
-      <div className="mt-20">
+      <div className="md:mt-20 mt-0">
         <Map />
       </div>
     </div>
