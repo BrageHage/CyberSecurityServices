@@ -34,7 +34,10 @@ function App() {
           Les Mer Her
         </p>
       </button>
-      <FaCircleArrowDown className="w-16 h-16 text-MainButton animate-bounce mt-20 mb-24" />
+      <div onClick={handleScroll}>
+        <FaCircleArrowDown className="w-16 h-16 text-MainButton animate-bounce mt-20 mb-24" />
+      </div>
+
       <div className="flex flex-wrap py-24 sm: justify-center" id="cardSection">
         <Card
           title="Administrert deteksjon og respons"
@@ -84,7 +87,7 @@ function App() {
         <EmployeeCard
           name="Jacub Elfenbein"
           image="https://www.w3schools.com/w3images/team3.jpg"
-          description="Janne Hansen spesielliserer seg på sikkerhet i skyen. Han har jobbet med cybersikkerhet i over 10 år og har en mastergrad i informatikk fra NTNU."
+          description="Jacub Hansen spesielliserer seg på sikkerhet i skyen. Han har jobbet med cybersikkerhet i over 10 år og har en mastergrad i informatikk fra NTNU."
           url="https://github.com/BrageHage"
         />
         <EmployeeCard
