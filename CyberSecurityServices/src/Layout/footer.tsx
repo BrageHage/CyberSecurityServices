@@ -36,28 +36,28 @@ const Footer = () => {
             <div
               className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
               onClick={() => {
-                handleClickUrl("https://twitter.com/home?lang=en");
+                handleClickUrl("https://twitter.com/home?lang=en", true);
               }}
             >
               <FaTwitter color="#39ECF3" />
             </div>
             <div
               className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
-              onClick={() => handleClickUrl("https://www.linkedin.com/")}
+              onClick={() => handleClickUrl("https://www.linkedin.com/", true)}
             >
               <FaLinkedinIn color="#39ECF3" />
             </div>
             <div
               className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
               onClick={() => {
-                handleClickUrl("https://www.instagram.com/");
+                handleClickUrl("https://www.instagram.com/", true);
               }}
             >
               <FaInstagram color="#39ECF3" />
             </div>
             <div
               className="flex items-center justify-center h-8 w-8 rounded-full border-2 border-MainButton"
-              onClick={() => handleClickUrl("https://www.facebook.com/")}
+              onClick={() => handleClickUrl("https://www.facebook.com/", true)}
             >
               <FaFacebookF color="#39ECF3" />
             </div>

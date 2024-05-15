@@ -1,12 +1,11 @@
 import { FaCircleArrowDown, FaCloudArrowDown } from "react-icons/fa6";
-import Card from "./components/Card";
+import Card from "../components/Card";
 import { GiProtectionGlasses } from "react-icons/gi";
 import { SiHackaday } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
-import EmployeeCard from "./components/Employee";
-import { Map } from "./components/MapComponent";
-import CookieComponent from "./components/CookieComponent";
-import { useState } from "react";
+import EmployeeCard from "../components/Employee";
+import { Map } from "../components/MapComponent";
+import CookieComponent from "../components/CookieComponent";
 
 const handleScroll = () => {
   const element = document.getElementById("cardSection");

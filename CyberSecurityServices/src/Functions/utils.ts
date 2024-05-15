@@ -1,3 +1,7 @@
-export const handleClickUrl = (url: string) => {
-  window.open(url, "_blank");
+export const handleClickUrl = (url: string, newTab: Boolean) => {
+  if (newTab) {
+    window.open(url, "_blank");
+  } else {
+    window.open(url, "_self");
+  }
 };

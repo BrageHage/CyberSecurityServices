@@ -4,12 +4,13 @@ const CookieComponent = () => {
   const [acceptCookie, setAcceptCookie] = useState(false);
   const handleCookie = () => {
     if (!acceptCookie) {
-      localStorage.setItem("cookie", "true");
+      // Set cookie in localStorage
+      document.cookie = "cookie=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
       setAcceptCookie(true);
     }
   };
   useEffect(() => {
-    if (localStorage.getItem("cookie")) {
+    if (document.cookie.includes("cookie=true")) {
       setAcceptCookie(true);
     }
   }, []);
@@ -18,7 +19,7 @@ const CookieComponent = () => {
     return null;
   } else {
     return (
-      <div className="flex flex-col justify-center w-80 h-64 bg-gradient-to- from bg-MainBackground to-SecondaryBackground rounded-lg border-ThirdBackground border-2 m-4 text-MainText z-20 sticky bottom-24">
+      <div className="flex flex-col justify-center w-80 h-64 bg-gradient-to- from bg-MainBackground to-SecondaryBackground rounded-lg border-ThirdBackground border-2 m-4 text-MainText z-20 sticky bottom-80">
         <div className="px-4">
           <p className="text-start mb-5">
             We use cookies to ensure that we give you the best experience on our
