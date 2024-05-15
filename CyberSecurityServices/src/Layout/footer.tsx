@@ -26,14 +26,9 @@ const Footer = () => {
           <p className="text-MainText opacity-50">Partnere</p>
         </div>
         <div className="flex flex-col space-y-2">
-          <h2 className="text-2xl text-MainText font-semibold">Kontakt oss</h2>
-          <p className="text-MainText opacity-50">
-            Adresse: Satkhira, Kalihanj, BD
-          </p>
-          <p className="text-MainText opacity-50">
-            Email: aburaihan.it009@gmail.com
-          </p>
-          <p className="text-MainText opacity-50">Telefon: +880 1715-662-988</p>
+          <h2 className="text-2xl text-MainText font-semibold">
+            <a href="/kontakt">Kontakt oss</a>
+          </h2>
         </div>
         <div>
           <h2 className="text-2xl text-MainText font-semibold">Finn oss</h2>

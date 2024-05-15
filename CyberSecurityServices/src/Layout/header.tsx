@@ -1,6 +1,6 @@
 import { FaTwitter } from "react-icons/fa6";
 import Logo from "../assets/LogoMain.png";
-import "../index.css";
+import "../Styles/index.css";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { handleClickUrl } from "../Functions/utils";
 

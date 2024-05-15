@@ -27,12 +27,15 @@ const Card = ({ title, description, icon, url }: Props) => {
         {description}
       </p>
       <div className="text-MainButton flex px-4 text-base opacity-80 text-start justify-between mt-auto mb-5">
-        <a onClick={handleClickLink} className="hover:scale-110">
+        <a
+          onClick={handleClickLink}
+          className="hover:scale-110 transition-all duration-300 ease-in-out"
+        >
           Les mer
         </a>
         <FaArrowRight
           onClick={handleClickLink}
-          className="text-SecondButton mt-1 w-5 hover:scale-110"
+          className="text-SecondButton mt-1 w-5 hover:scale-110 transition-all duration-300 ease-in-out"
         />
       </div>
     </div>

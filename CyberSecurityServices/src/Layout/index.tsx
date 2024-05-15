@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./header";
-import "../index.css";
+import "../Styles/index.css";
 import Waves from "../assets/waves.png";
 import Footer from "./footer";
 const Layout = () => {

@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import LogoMain from "../assets/LogoMain.png";
-import "../index.css";
+import "../Styles/index.css";
 
 export function Map() {
   return (

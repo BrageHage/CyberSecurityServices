@@ -5,6 +5,8 @@ import { SiHackaday } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 import EmployeeCard from "./components/Employee";
 import { Map } from "./components/MapComponent";
+import CookieComponent from "./components/CookieComponent";
+import { useState } from "react";
 
 const handleScroll = () => {
   const element = document.getElementById("cardSection");
@@ -108,6 +110,7 @@ function App() {
       <div className="md:mt-20 mt-0">
         <Map />
       </div>
+      <CookieComponent />
     </div>
   );
 }
